@@ -3,8 +3,7 @@
     local method = getnamecallmethod()
 
     if checkcaller() then
-        if self.Name == "LavarossaFloor" and method == "Destroy" then
-            warn("XDXDXD")
+        if self.Name == "LavarossaFloor" and tostring(method) == "Destroy" then
             return
         end
     end
